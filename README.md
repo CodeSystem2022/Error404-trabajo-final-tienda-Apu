@@ -3,7 +3,7 @@
 
 ## Proyecto Integrador Cuarto Semestre - TUP - UTN 2023  
 
-## Tienda Apu KiwkEmart  
+## Tienda Apu KwikEmart  
 <img  src="https://i.pinimg.com/1200x/f8/af/e1/f8afe13cf25c09ed404b1a94baee9192.jpg">
 
 
