@@ -9,11 +9,16 @@
 > ### Integrantes: 
 >
 ><img  width="25"  height="25"  src="https://img.icons8.com/doodle/48/name.png"  alt="name"/>  [Pablo Flores Sanguinetti](https://github.com/Pablo1653)
+> 
 ><img  width="25"  height="25"  src="https://img.icons8.com/doodle/48/name.png"  alt="name"/> [Brian Ahumada](https://github.com/brianahumada)
+> 
 ><img  width="25"  height="25"  src="https://img.icons8.com/doodle/48/name.png"  alt="name"/> [Rodrigo Chavez](https://github.com/RodrigoChavez1986)
+> 
 ><img  width="25"  height="25"  src="https://img.icons8.com/doodle/48/name.png"  alt="name"/> [Alejandro Berrini](https://github.com/AlejandroEB89)
+> 
 ><img  width="25"  height="25"  src="https://img.icons8.com/doodle/48/name.png"  alt="name"/> [Lucas Navarro](https://github.com/LucasNavarro01)
 -------------------
+
 ### Acerca de este Proyecto:
 
 Este es nuestro Trabajo Final Integrador de la Carrera Tecnicatura Universitaria en Programación de la UTN y el objetivo es poder plasmar todos los concoimientos adquiridos durante el trayecto.
