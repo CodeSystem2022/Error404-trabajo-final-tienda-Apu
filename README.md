@@ -6,6 +6,7 @@
 ## Tienda Apu KiwkEmart  
 <img  src="https://i.pinimg.com/1200x/f8/af/e1/f8afe13cf25c09ed404b1a94baee9192.jpg">
 
+
 > ### Integrantes: 
 >
 ><img  width="25"  height="25"  src="https://img.icons8.com/doodle/48/name.png"  alt="name"/>  [Pablo Flores Sanguinetti](https://github.com/Pablo1653)
@@ -17,6 +18,8 @@
 ><img  width="25"  height="25"  src="https://img.icons8.com/doodle/48/name.png"  alt="name"/> [Alejandro Berrini](https://github.com/AlejandroEB89)
 > 
 ><img  width="25"  height="25"  src="https://img.icons8.com/doodle/48/name.png"  alt="name"/> [Lucas Navarro](https://github.com/LucasNavarro01)
+
+
 -------------------
 
 ### Acerca de este Proyecto:
