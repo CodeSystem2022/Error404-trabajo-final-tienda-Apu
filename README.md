@@ -31,7 +31,7 @@ La idea principal es la de dar forma a un Ecomerce basado en la famosa *Tienda d
 Para ello elegimos el framework de desarrolo web ***Django***.
 
 
-## Por qué elegimos  <img width="" height="" src="https://static.djangoproject.com/img/logos/django-logo-negative.png" alt="django"/> 
+## Por qué elegimos  <img width="" height="60" src="https://static.djangoproject.com/img/logos/django-logo-negative.png" alt="django"/> 
 
 Django es un framework de desarrollo para Python que se emplea para la **creación de páginas web.**
 Es una herramienta que se puede usar para el desarrollo _full-stack_ de aplicaciones y páginas web, así como para el **desarrollo de servidores.** Está considerado como el mejor framework para el desarrollo de aplicaciones web con Python y es uno de los marcos de desarrollo más demandados por los programadores que trabajan con este lenguaje en el desarrollo web.
