@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Kwikemart | {% endblock %} 
+{% block content %}
+
+
+<div class="container p-3">
+    <h1>Contactate con Apu</h1>    
+    <div class="row align-items-start ">
+        <div class="col-md-10 offset-md-1">
+            <ul class="list-unstyled">
+                <div class="p-2"><li><i class="fa fa-map-marker"></i> Lugar: Dirección de la tienda</li></div>
+                <div class="p-2"><li><i class="fa fa-envelope"></i> Correo E-mail: info@tiendaapu.com</li></div>
+                <div class="p-2"><li><i class="fa fa-facebook"></i> Facebook: <a href="https://www.facebook.com/tiendaapu">Facebook</a></li></div>
+                <div class="p-2"><li><i class="fa fa-instagram"></i> Instagram: <a href="https://www.instagram.com/tiendaapu">Instagram</a></li></div>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container ">
+    <h1>Dejanos un mensaje</h1>
+        
+    <a href="{% url 'envio' %}" class="btn btn-warning btn-custom">COMUNICARTE CON APU</a>
+    <br class="p-5">
+    <br class="p-5">
+    <br class="p-5">
+    <img src="{% static 'apu.jpg' %}" alt="Apu">
+    
+</div>
+
+
+{% endblock %}
