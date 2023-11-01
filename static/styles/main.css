@@ -1,77 +1,64 @@
-/**letra de los simpson**/
-@import url('https://fonts.cdnfonts.com/css/simpsonfont');
-
-
-.title{
-    font-family: 'Simpsonfont';
-}
-.title1{
-    font-family: 'Simpsonfont';
-    font-size: 20px;
-    background-color: #FFD90F!important;
-    
-}
-
-/* Cambia el tamaño del botón al pasar el mouse sobre él */
-.btn-custom {
-  transition: transform 0.3s;
-}
-
-.btn-custom:hover {
-  transform: scale(1.1); /* Aumenta el tamaño en un 10% */
-}
-
-
-
 /**
 *NAV
 */
 
-/* Navbar con texto en mayúsculas */
-.navbar {
+.navbar  {
     text-transform: uppercase;
 }
 
-/* Navbar con fondo oscuro personalizado */
-.navbar.is-dark {
-    background: #444;
+    .navbar .is-dark{
+        background: #444;
+
+    }
+
+
+/**
+*Footer
+*/
+
+ .footer a {
+        margin-bottom:15 px;
+        display: inline-block;
+        color: #444;
 }
 
-/* Estilos para los enlaces en el footer */
-.footer a {
-    margin-bottom: 15px;
-    display: inline-block;
-    color: #444;
-}
+/**
+*Bulma overrides
+*/
 
-/* Sobrescribe los estilos de los componentes input y button para quitar el border-radius */
-.form-control, .btn {
+.input, .button{
     border-radius: 0;
 }
 
-/* Estilos para los elementos de la lista de productos */
+/**
+*Product list item 
+*/
+
 .product-list-item .box .subtitle {
-    margin-bottom: 0;
+    margin-bottom :0 ;
+
 }
 
-.product-list-item .box .price {
+.product-list-item .box .price{
     color: #888;
 }
 
-/* Animación de notificación tipo toast */
+
+/**
+* Notification toast
+*/
+
 @keyframes show-toast {
-    0%   { bottom: -100%; }
-    20%  { bottom: 50px; }
-    80%  { bottom: 50px; }
-    100% { bottom: -100%; }
+    0%   {bottom: -100%;}
+    20%  {bottom: 50px;}
+    80%  {bottom: 50px;}
+    100% {bottom: -100%;}
 }
 
-/* Estilos para la notificación tipo toast */
 .notification.is-toast {
     position: fixed;
-    bottom: 100px; /* Ajusta la posición según tus necesidades */
+    bottom: 100%;
     right: 20px;
     animation-name: show-toast;
     animation-duration: 4s;
 }
-
