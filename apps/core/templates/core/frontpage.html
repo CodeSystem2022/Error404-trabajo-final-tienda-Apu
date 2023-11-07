@@ -2,16 +2,19 @@
 
 {% block title %}Kwikemart | {% endblock %} 
 {% block content %}
-        <div class="columns is-multiline mb-6">
-
-            <div class="column is-12 has-text-centered mt-6 mb-6">
-                    <h2 clas="is-size-3" >Nuevos productos</h2>
+    <div class="container mt-6 mb-6">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="display-4">Nuevos productos</h2>
             </div>
 
             {% for product in newest_products %}
-                {% include 'product/parts/list_item.html' %}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        {% include 'product/parts/list_item.html' %}
+                    </div>
+                </div>
             {% endfor %}
         </div>
-
-
+    </div>
 {% endblock %}

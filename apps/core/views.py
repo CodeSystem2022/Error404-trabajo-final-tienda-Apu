@@ -37,4 +37,3 @@ def enviar_correo(request):
     else:
         print('EL MENSAJE A FALLADO')
     return render(request,'core/envio.html',{'envio':form})
-    

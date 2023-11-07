@@ -1,46 +1,43 @@
 {% extends 'core/base.html' %}
 
-{% block title %}Panel de vendedor| {% endblock %}
+{% block title %}Panel de vendedor | {% endblock %}
 
 {% block content %}
-    <div class="box">
-        <h1 class="title">Panel de vendedor - {{ vendor.name }}</h1>
+    <div class="container">
+        <div class="card mb-4">
+            <div class="card-body">
+                <h1 class="h1">Panel de vendedor - {{ vendor.name }}</h1>
+                <hr>
+                <a href="{% url 'logout' %}" class="btn btn-danger btn-uppercase">Salir</a>
+            </div>
+        </div>
 
-        
-        <hr>
-
-         
-        <a href="{% url 'logout' %}" class="button is-danger is-uppercase">Salir</a>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="h3 mb-4">Mis productos</h2>
+                <a href="{% url 'add_product' %}" class="btn btn-warning btn-uppercase mb-4">Sumar producto</a>
+                
+                {% if products %}
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for product in products %}
+                                <tr>
+                                    <td><a href="{% url 'product' product.category.slug product.slug %}">{{ product.title }}</a></td>
+                                    <td>${{ product.price }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <p>No tienes productos aún...</p>
+                {% endif %}
+            </div>
+        </div>
     </div>
-
-    <div class="box">
-        <h2 class="is-size-3 mb-4">Mis productos</h2>
-
-        <a href="{% url 'add_product' %}" class="button is-dark is-uppercase mb-6">Sumar producto</a>
-
-        {% if products %}
-            <table class="table is-fullwidth">
-                <thead>
-                    <tr>
-                        <th>Titulo</th>
-                        <th>Precio</th>
-                        
-                    </tr>
-                </thead>
-
-                <tbody>
-                    {% for product in products %}
-                        <tr>
-                            <td><a href="{% url 'product' product.category.slug product.slug %}">{{ product.title }}</a></td>
-                            <td>${{ product.price }}</td>
-                            
-                        </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        {% else %}
-            <p>No tienes productos aun...</p>
-        {% endif %}
-    </div>
-
 {% endblock %}

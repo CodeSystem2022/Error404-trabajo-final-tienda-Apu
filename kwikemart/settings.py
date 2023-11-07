@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -38,6 +37,14 @@ LOGOUT_REDIRECT_URL='frontpage'
 SESSION_COOKIE_AGE=86400
 CART_SESSION_ID='cart'
 
+#Correo electorinico
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'outlook.office365.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'tienda_apu@hotmail.com'
+EMAIL_HOST_PASSWORD = 'Tu_amigo_apu'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -47,11 +54,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "apps.vendor",
-    "apps.core",
-    "apps.product",
-    "apps.order",
     "apps.cart",
+    "apps.vendor",
+    "apps.product",
+    "apps.core",
+    "apps.order"
+    
     
     
 ]
@@ -129,6 +137,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "/static/"
+
 STATICFILES_DIRS=[
     BASE_DIR / 'static'
 ]

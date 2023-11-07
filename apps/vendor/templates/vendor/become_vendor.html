@@ -1,32 +1,27 @@
 {% extends 'core/base.html' %}
 
-
-{% block title %} Trabajar para apu | {% endblock %}
+{% block title %}Trabajar para Apu | {% endblock %}
 
 {% block content %}
+    <div class="container">
+        <h1 class="h1">Homerito</h1>
 
-    <h1 class="title" >Homerito</h1>
+        <form method="post" action=".">
+            {% csrf_token %}
+            
+            {{ form.as_p }}
 
-
-    <form method="post" action=".">
-         {% csrf_token %}
-
-
-          {{form.as_p}}
-
-          <div class="field">
-            <div class="control"> 
-                <button class="button is-dark is-uppercase">Loggearse</button>
+            <div class="form-group">
+                <div class="control">
+                    <button class="btn btn-warning btn-uppercase">Loggearse</button>
+                </div>
             </div>
-          </div>
-    </form>
+        </form>
 
-    <hr>
+        <hr>
 
-    <h2 class="subtitle">Ya tienes una  cuenta ? </h2>
+        <h2 class="h2">¿Ya tienes una cuenta?</h2>
 
-
-
-    <a href="{% url 'login' %}">Log in </a>
-
+        <a href="{% url 'login' %}" class="btn btn-link">Log in</a>
+    </div>
 {% endblock %}
