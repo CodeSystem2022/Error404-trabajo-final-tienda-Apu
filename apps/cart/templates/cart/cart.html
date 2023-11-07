@@ -6,7 +6,7 @@
     <h1 class="title">Carrito</h1>
 
     {% if cart %}
-        <div class="box mb-6">
+        <div class="container box mb-6">
             <div class="table">
                 <table class="table is-fullwidth is-striped">
                     <thead>
@@ -26,16 +26,16 @@
                                     </figure>
                                 </td>
                                 <td>
-                                    <a href="{% url 'product' item.product.category.slug item.product.slug %}">{{ item.product.title }}</a>
+                                    <a href="{% url 'product' item.product.category.slug item.product.slug %}" class="btn btn-warning">{{ item.product.title }}</a>
                                 </td>
                                 <td>
                                     {{ item.quantity }}
 
-                                    <a href="?change_quantity={{ item.id }}&quantity=-1">-</a>
-                                    <a href="?change_quantity={{ item.id }}&quantity=1">+</a>
+                                    <a href="?change_quantity={{ item.id }}&quantity=-1" class="btn btn-warning">-</a>
+                                    <a href="?change_quantity={{ item.id }}&quantity=1" class="btn btn-warning">+</a>
                                 </td>
                                 <td>${{ item.total_price }}</td>
-                                <td><a href="?remove_from_cart={{ item.id }}" class="delete">Borrar</a></td>
+                                <td><a href="?remove_from_cart={{ item.id }}" class="delete btn btn-warning">Borrar</a></td>
                             </tr>
                         {% endfor %}
                     </tbody>
@@ -152,7 +152,7 @@
             
             <div class="field">
                 <div class="control">
-                    <button class="button is-dark mt-4 is-uppercase">Confirmar</button>
+                    <button class="button btn-warning mt-4 is-uppercase btn btn-warning btn-custom">Confirmar</button>
                 </div>
             </div>
         </div>
