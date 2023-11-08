@@ -26,7 +26,7 @@
 > 
 > [BRIEF DEL PROYECTO](https://docs.google.com/document/d/1Qj4rhgkC57c2oxyk80Zlca98GhJgPawsWnrWU6lo4oU/edit)
 >
-> [ WIKI ] (https://github.com/CodeSystem2022/Error404-trabajo-final-tienda-Apu/wiki)
+> [WIKI](https://github.com/CodeSystem2022/Error404-trabajo-final-tienda-Apu/wiki)
 
 -------------------
 
