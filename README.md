@@ -22,6 +22,14 @@
 
 -------------------
 
+> ### LINKS:
+> 
+> [BRIEF DEL PROYECTO](https://docs.google.com/document/d/1Qj4rhgkC57c2oxyk80Zlca98GhJgPawsWnrWU6lo4oU/edit)
+> [ WIKI ] (https://github.com/CodeSystem2022/Error404-trabajo-final-tienda-Apu/wiki)
+
+-------------------
+
+
 ### Acerca de este Proyecto:
 
 Este es nuestro Trabajo Final Integrador de la Carrera Tecnicatura Universitaria en Programación de la UTN y el objetivo es poder plasmar todos los concoimientos adquiridos durante el trayecto.
